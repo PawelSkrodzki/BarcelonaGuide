@@ -1,0 +1,446 @@
+@font-face {
+  src: url(fonts/CooperBTW01Light.ttf);
+  font-family: CooperLight;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+body {
+  background-color: #fffdf4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: CooperLight;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 113.22%;
+}
+
+h2 {
+  font-size: 80px;
+}
+
+h3 {
+  font-size: 50px;
+}
+
+h4 {
+  font-size: 40px;
+}
+
+h5 {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+p {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 113.22%;
+  color: #000000;
+}
+
+a {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 113.22%;
+  color: #000000;
+  text-decoration: none;
+}
+
+li {
+  font-family: "Cormorant Garamond", serif;
+}
+
+header {
+  height: 100vh;
+  background-image: url("../img/gracia1-min.png");
+  background-size: cover;
+  background-position: bottom;
+  z-index: 10;
+}
+
+.nav-bar {
+  position: relative;
+  top: 0px;
+  z-index: 1000;
+  width: 100%;
+}
+
+.sticky {
+  position: fixed;
+}
+
+.nav-bar h5 {
+  position: absolute;
+  left: 61px;
+  top: 30px;
+}
+
+.full-navigation {
+  position: absolute;
+  right: 61px;
+  top: 30px;
+}
+
+.full-navigation a {
+  padding-bottom: 3px;
+}
+
+.overflow-hidden {
+  overflow-x: hidden;
+  position: absolute;
+  width: 100%;
+  height: 10000px;
+  display: none;
+}
+
+.responsive-navigation {
+  display: none;
+  position: relative;
+  position: absolute;
+  right: -288px;
+  top: 0px;
+  width: 287px;
+  height: 100vh;
+  padding-top: 99px;
+  background-color: #fffdf4;
+  border-left: 1px solid #000000;
+  transition: 0.5s;
+}
+
+.responsive-navigation-opened {
+  right: 0;
+  transition: 0.5s;
+}
+
+.hamburger-menu {
+  z-index: 1000;
+  position: absolute;
+  left: -50px;
+  top: 30px;
+  height: 7px;
+  width: 25px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  transition: 0.5s;
+}
+
+.hamburger-menu-opened {
+  left: 238px;
+  transition: 0.5s;
+}
+
+.line1,
+.line2 {
+  height: 1px;
+  width: 25px;
+  background-color: #000000;
+  transition: 0.5s;
+}
+
+.line2 {
+  width: 15px;
+  margin-left: 10px;
+}
+
+.responsive-menu li {
+  padding: 0px 35px 0 48px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 79px;
+}
+
+.responsive-menu a {
+  margin-right: 75px;
+  font-size: 30px;
+  position: relative;
+}
+
+.responsive-menu-opened {
+  background-color: red;
+}
+
+.line1-close {
+  width: 15px;
+  transform: rotateZ(-45deg) translate(-4px, 8.8px);
+  transition: 0.5s;
+}
+
+.line2-close {
+  width: 15px;
+  margin-left: 0px;
+  transform: rotateZ(45deg) translate(4.5px, -0.1px);
+  transition: 0.5s;
+}
+
+.responsive-navigation a::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  bottom: 0px;
+  width: 100%;
+  left: 0;
+  background-color: #000000;
+  transition: 0.5s;
+  transform: scaleX(0);
+}
+
+.responsive-navigation a:hover::after {
+  transition: 0.5s;
+  transform: scaleX(1);
+}
+
+.header-title {
+  position: fixed;
+  font-size: 128px;
+  color: #fffdf4;
+  z-index: 999;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50vh;
+  transition: 0.5s;
+}
+
+.scrolled {
+  transition: color 0.5s;
+  color: #000000;
+}
+
+.attached {
+  position: absolute;
+  top: 283px;
+  transition: position 0s;
+}
+
+section {
+  position: relative;
+  max-width: 1280px;
+  background-color: #fffdf4;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.main-p {
+  text-align: center;
+  max-width: 540px;
+  margin: 0 auto;
+  padding: 371px 0 299px 0;
+}
+
+.eat-container,
+.buy-container,
+.fix-container {
+  display: flex;
+  height: 668px;
+  margin: 0 auto;
+  padding-bottom: 290px;
+}
+
+.eat-photo-container,
+.fix-photo-container {
+  flex: 0.67;
+  position: relative;
+}
+
+.eat-text-container,
+.fix-text-container {
+  flex: 0.33;
+}
+
+.eat-text-container div,
+.fix-text-container div {
+  padding-right: 30px;
+}
+
+.photo {
+  position: absolute;
+}
+
+.eat-photo1 {
+  left: 52%;
+}
+
+.eat-photo2 {
+  right: 10%;
+  top: 446px;
+}
+
+.eat-photo3 {
+  right: 49%;
+  top: 255px;
+}
+
+.eat-text-container {
+  display: flex;
+  align-items: center;
+}
+
+.title,
+.list {
+  padding-bottom: 30px;
+}
+
+.paragraph {
+  padding-bottom: 40px;
+  max-width: 290px;
+}
+
+.list {
+  list-style-type: disc;
+  font-weight: 500;
+}
+
+.list li {
+  display: list-item;
+  list-style-position: inside;
+  padding-bottom: 5px;
+}
+
+.buy-container {
+  flex-direction: row-reverse;
+  height: 592px;
+}
+
+.buy-photo-container {
+  position: relative;
+  flex: 0.6;
+}
+
+.buy-text-container {
+  padding-top: 60px;
+  flex: 0.4;
+}
+
+.buy-text-container div {
+  padding-left: 26%;
+}
+
+.buy-photo1 {
+  right: 55%;
+}
+
+.buy-photo2 {
+  left: 58%;
+  top: 120px;
+}
+
+.buy-photo3 {
+  left: 8%;
+  bottom: 0;
+}
+
+.fix-container {
+  height: 525px;
+  padding-bottom: 209px;
+}
+
+.fix-text-container {
+  padding-top: 30px;
+}
+
+.fix-photo1 {
+  right: 62%;
+}
+
+.fix-photo2 {
+  right: 14%;
+  top: 58px;
+}
+.fix-photo3 {
+  right: 40%;
+  bottom: 0;
+}
+
+footer {
+  border-top: 1px solid #f6ecd8;
+  width: 100%;
+  height: 282px;
+}
+
+footer h4 {
+  padding-top: 92px;
+  text-align: center;
+}
+
+footer p {
+  padding-top: 10px;
+  text-align: center;
+}
+
+/* RESPONSIVE STYLES */
+
+@media (max-width: 1250px) {
+  .nav-bar h5 {
+    left: 21px;
+  }
+
+  .full-navigation {
+    right: 21px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .buy-text-container div {
+    padding-left: 17%;
+  }
+}
+
+@media (max-width: 860px) {
+  .header-title {
+    font-size: 88px;
+  }
+
+  .main-p {
+    width: 70%;
+  }
+  .buy-text-container div {
+    padding-left: 28px;
+  }
+}
+@media (max-width: 570px) {
+  .full-navigation {
+    display: none;
+  }
+
+  .overflow-hidden {
+    display: block;
+  }
+
+  .responsive-navigation {
+    display: block;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .header-title {
+    font-size: 72px;
+  }
+
+  .main-p {
+    max-width: 335px;
+    padding: 350px 0 132px 0; /*w razie co zmienic funkcje w JS*/
+  }
+}
