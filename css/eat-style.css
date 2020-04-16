@@ -93,7 +93,7 @@ a {
   margin: 0 auto;
 }
 
-.big {
+img.big {
   transition: filter 0.8s;
 }
 
@@ -102,18 +102,23 @@ a {
   transition: filter 0.8s;
 }
 
-.small {
+img.small {
   position: absolute;
 }
 
-.small-right1 {
+img.small-right1 {
   bottom: -40px;
   right: -135px;
 }
 
-.small-right2 {
+img.small-right2 {
   bottom: -50px;
   right: -90px;
+}
+
+img.small-right4{
+  right: -105px;
+  bottom: -70px;
 }
 
 .small-left {
@@ -151,7 +156,7 @@ a {
 
 .section-background {
   width: 100%;
-  background-color: #E1D19D;
+  background-color: #ECA278;
 }
 
 .photos {
@@ -164,7 +169,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #E1D19D;
+  background-color: #ECA278;
 }
 
 .photo {

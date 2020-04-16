@@ -151,7 +151,7 @@ a {
 
 .section-background {
   width: 100%;
-  background-color: #E1D19D;
+  background-color: #F6ECD8;
 }
 
 .photos {
@@ -164,7 +164,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #E1D19D;
+  background-color: #F6ECD8;
 }
 
 .photo {
@@ -172,43 +172,38 @@ a {
 }
 
 .photo-1 {
-  right: 84%;
+  right: 82%;
   bottom: 58%;
   filter: grayscale(1);
 }
 
 .photo-2 {
-  right: 57%;
+  right: 50%;
   bottom: 64%;
 }
 
 .photo-3 {
-  left: 64%;
-  bottom: 67%;
+  left: 73%;
+  bottom: 57%;
 }
 
 .photo-4 {
-  left: 82%;
-  bottom: 66%;
-}
-
-.photo-5 {
   right: 80%;
   top: 60%;
 }
 
-.photo-6 {
+.photo-5 {
   right: 58%;
-  top: 66%;
+  top: 70%;
   width: 81px;
 }
 
-.photo-7 {
+.photo-6 {
   left: 54%;
-  top: 66%;
+  top: 72%;
 }
 
-.photo-8 {
+.photo-7 {
   left: 75%;
   top: 58%;
 }
@@ -238,7 +233,7 @@ a {
 
 .fix:hover,
 .buy:hover {
-  background-color: #e1d19d;
+  background-color: #ECA278;
   transition: 0.8s;
 }
 
@@ -318,41 +313,41 @@ a {
 
   .photo-1 {
     left: 5%;
+    width: 100px;
   }
 
   .photo-2 {
-    left: 30%;
+    left: 40%;
     width: 100px;
   }
 
   .photo-3 {
-    width: 80px;
-    left: 55%;
+    width: 150px;
+    left: 75%;
     bottom: 64%;
   }
 
   .photo-4 {
-    left: 78%;
-    bottom: 58%;
+    top: 66%;
+    width: 100px;
   }
 
   .photo-5 {
-    top: 66%;
+    right: 58%;
+    top: 75%;
+    width: 70px;
   }
 
   .photo-6 {
-    right: 58%;
-    top: 75%;
+    left: 57%;
+    top: 77%;
+    width: 100px;
   }
 
   .photo-7 {
-    left: 50%;
+    left: 83%;
     top: 67%;
-  }
-
-  .photo-8 {
-    left: 77%;
-    top: 65%;
+    width: 100px;
   }
 
   .fix h2,

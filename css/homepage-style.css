@@ -103,7 +103,8 @@ header {
 }
 
 .full-navigation a {
-  padding-bottom: 3px;
+  margin-bottom: 3px;
+  position: relative;
 }
 
 .overflow-hidden {
@@ -194,7 +195,8 @@ header {
   transition: 0.5s;
 }
 
-.responsive-navigation a::after {
+.responsive-navigation a::after,
+.full-navigation a::after {
   position: absolute;
   content: "";
   height: 1px;
@@ -206,7 +208,8 @@ header {
   transform: scaleX(0);
 }
 
-.responsive-navigation a:hover::after {
+.responsive-navigation a:hover::after,
+.full-navigation a:hover::after {
   transition: 0.5s;
   transform: scaleX(1);
 }
