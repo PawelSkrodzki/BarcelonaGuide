@@ -151,7 +151,7 @@ a {
 
 .section-background {
   width: 100%;
-  background-color: #F6ECD8;
+  background-color: #f6ecd8;
 }
 
 .photos {
@@ -164,7 +164,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #F6ECD8;
+  background-color: #f6ecd8;
 }
 
 .photo {
@@ -233,7 +233,7 @@ a {
 
 .fix:hover,
 .buy:hover {
-  background-color: #ECA278;
+  background-color: #eca278;
   transition: 0.8s;
 }
 
@@ -243,6 +243,11 @@ a {
   padding-bottom: 47px;
   transition: 0.8s;
 }
+
+.fix h2,
+.buy h2 {
+  text-align: center;
+} /* do reszty */
 
 .border {
   max-width: 1px;
@@ -255,7 +260,7 @@ a {
     margin: 0 0 0 55px;
   }
 
-   .first-overlay-right {
+  .first-overlay-right {
     margin-right: 140px;
   }
 
@@ -273,7 +278,6 @@ a {
 }
 
 @media (max-width: 860px) {
-
   .flexbox {
     flex-direction: column-reverse;
     margin: 0 20px 0 20px;
@@ -290,7 +294,7 @@ a {
     margin-left: 13%;
   }
 
-  .first-overlay-right{
+  .first-overlay-right {
     margin-right: 0px;
   }
   .overlay-right {
@@ -377,7 +381,7 @@ a {
     max-width: 305px;
   }
 
-  .overlay{
+  .overlay {
     margin: 0;
   }
 
@@ -391,16 +395,16 @@ a {
     bottom: -70px;
   }
 
-  .small-right1{
+  .small-right1 {
     right: 30px;
     bottom: -40px;
   }
 
-  .small-right2{
+  .small-right2 {
     right: 30px;
   }
 
-  .small-left{
+  .small-left {
     left: 130px;
     bottom: -50px;
   }
@@ -429,47 +433,41 @@ a {
 
   .photo-1 {
     left: 5%;
-    bottom: 68%;
+    bottom: 60%;
     width: 79px;
   }
 
   .photo-2 {
     left: 40%;
-    bottom: 79%;
+    bottom: 75%;
     width: 75px;
   }
 
   .photo-3 {
-    left: 73%;
-    bottom: 72%;
-    width: 76px;
+    left: 70%;
+    bottom: 66%;
+    width: 86px;
   }
 
   .photo-4 {
-    left: 46%;
+    left: 39%;
     bottom: 53%;
     width: 75px;
   }
 
   .photo-5 {
-    left: 7%;
-    top: 59%;
-    width: 67px;
+    right: 74%;
+    top: 60%;
+    width: 75px;
   }
 
   .photo-6 {
-    right: 45%;
-    top: 65%;
-    width: 65px;
+    left: 70%;
+    top: 70%;
+    width: 93px;
   }
 
   .photo-7 {
-    left: 70%;
-    top: 70%;
-    width: 86px;
-  }
-
-  .photo-8 {
     left: 17%;
     top: 83%;
     width: 76px;
@@ -484,13 +482,20 @@ a {
     height: 327px;
   }
 
-  .fix {
+  .fix,
+  .border {
     display: none;
   }
 
   .img-container {
     padding: 79px 0 30px 0;
   }
+
+  .fix img,
+  .buy img {
+    padding-bottom: 317px;
+  }
+  /* do zmiany */
 
   .buy h2,
   .fix-and-buy div h2 {

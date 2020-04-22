@@ -1,26 +1,6 @@
-var animatedTags = document.querySelectorAll(
-  ".main-p, .flexbox, .photo, .title, .paragraph, .list, .link, footer h4, footer p"
-);
-
-animatedTags.forEach((tag) => {
-  tag.style.opacity = 0;
-  tag.style.transform = "translateY(100px)";
-});
-
-var fadeIn = function () {
-  animatedTags.forEach((tag) => {
-    var tagTop = tag.getBoundingClientRect().top;
-    var tagBottom = tag.getBoundingClientRect().bottom;
-
-    if (tagTop < window.innerHeight && tagBottom > 0) {
-      tag.style.animation = "fadein  1s 0.2s both";
-      tag.style.transition = "1.5s";
-      tag.style.transform = "translateY(-10px)";
-    }
-  });
-};
 
 var header = document.querySelector(".fix-header");
+// pozmieniać nazwy z fix-header
 
 function headerAnimationSmall() {
   if (window.pageYOffset >= 100) {
@@ -73,18 +53,15 @@ function FixAndBuyHover() {
   });
 }
 
-fadeIn();
 headerAnimationSmall();
 FixAndBuyHover();
 responsiveNavbarAnimation();
 
 window.addEventListener("resize", function () {
-  fadeIn();
   responsiveNavbarAnimation();
 });
 
 document.addEventListener("scroll", function () {
-  fadeIn();
   headerAnimationSmall();
   headerAnimationBig();
 });
