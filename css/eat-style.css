@@ -1,162 +1,11 @@
-@font-face {
-  src: url(fonts/CooperBTW01Light.ttf);
-  font-family: CooperLight;
-}
-
-@keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  display: block;
-}
-
-body {
-  background-color: #fffdf4;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: CooperLight;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 113.22%;
-}
-
-h1 {
-  font-size: 128px;
-}
-
-h2 {
-  font-size: 80px;
-}
-
-h3 {
-  font-size: 35px;
-}
-
-h4 {
-  font-size: 24px;
-}
-
-h5 {
-  font-size: 16px;
-}
-
-p {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 113.22%;
-  color: #000000;
-}
-
-a {
-  font-family: "Cormorant Garamond", serif;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 113.22%;
-  color: #000000;
-  text-decoration: none;
-}
-
-.flexbox {
-  display: flex;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding-bottom: 206px;
-}
-
-.photo-container {
-  position: relative;
-  flex: 52%;
-}
-
-.overlay,
-.overlay-right {
-  width: 291px;
-  position: relative;
-}
-
-.overlay-right {
-  margin: 0 auto;
-}
-
-img.big {
-  transition: filter 0.8s;
-}
-
-.big:hover {
-  filter: grayscale(100%);
-  transition: filter 0.8s;
-}
-
-img.small {
-  position: absolute;
-}
-
-img.small-right1 {
-  bottom: -40px;
-  right: -135px;
-}
-
-img.small-right2 {
-  bottom: -50px;
-  right: -90px;
-}
-
-img.small-right4{
+img.small-right4 {
   right: -105px;
   bottom: -70px;
 }
 
-.small-left {
-  left: -100px;
-  bottom: -65px;
-}
-
-.text-container {
-  flex: 48%;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.text-container div {
-  margin: 0 60px 0 40px;
-}
-
-.text-container-left div {
-  margin-right: 40px;
-}
-
-.text-container div h5 {
-  padding: 70px 0 30px 0;
-}
-
-.description {
-  max-width: 340px;
-  padding-bottom: 30px;
-}
-
-.address {
-  padding-bottom: 20px;
-  max-width: 210px;
-}
-
 .section-background {
   width: 100%;
-  background-color: #ECA278;
+  background-color: #eca278;
 }
 
 .photos {
@@ -169,11 +18,7 @@ img.small-right4{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ECA278;
-}
-
-.photo {
-  position: absolute;
+  background-color: #eca278;
 }
 
 .photo-1 {
@@ -218,126 +63,13 @@ img.small-right4{
   top: 58%;
 }
 
-.fix-and-buy {
-  align-items: center;
-  height: 100vh;
-  display: flex;
-}
-
-.fix,
-.buy {
-  flex: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transition: 0.8s;
-}
-
-.img-opacity {
-  opacity: 0.5;
-  transition: 0.8s;
-}
-
 .fix:hover,
 .buy:hover {
   background-color: #e1d19d;
   transition: 0.8s;
 }
 
-.fix img,
-.buy img {
-  margin: 0 auto;
-  padding-bottom: 47px;
-  transition: 0.8s;
-}
-
-.border {
-  max-width: 1px;
-  height: 100%;
-  border-right: 1px solid #000000;
-}
-
-footer {
-  border-top: 1px solid #f6ecd8;
-  width: 100%;
-  height: 282px;
-  display: none;
-}
-
-footer h4 {
-  padding-top: 92px;
-  text-align: center;
-}
-
-footer p {
-  padding-top: 10px;
-  text-align: center;
-}
-
-@media (max-width: 1100px) {
-  .overlay {
-    margin: 0 0 0 55px;
-  }
-
-   .first-overlay-right {
-    margin-right: 140px;
-  }
-
-  .text-container div {
-    margin: 0 55px 0 65px;
-  }
-
-  .text-container div h4 {
-    padding: 30px 0 30px 0;
-  }
-
-  .text-container-left div {
-    margin: 0 10px 0 110px;
-  }
-}
-
 @media (max-width: 860px) {
-
-  .flexbox {
-    flex-direction: column-reverse;
-    margin: 0 20px 0 20px;
-    padding-bottom: 156px;
-  }
-
-  .reverse-flexbox {
-    flex-direction: column;
-  }
-
-  .overlay,
-  .text-container div {
-    margin: none;
-    margin-left: 13%;
-  }
-
-  .first-overlay-right{
-    margin-right: 0px;
-  }
-  .overlay-right {
-    margin-right: 140px;
-  }
-
-  .second-overlay-right {
-    margin-left: 140px;
-  }
-
-  .text-container {
-    justify-content: flex-start;
-    margin-bottom: 80px;
-  }
-
-  .reverse-big {
-    margin: none;
-    margin-right: 3%;
-  }
-
   .photo-1 {
     left: 5%;
   }
@@ -376,47 +108,14 @@ footer p {
     left: 77%;
     top: 65%;
   }
-
-  .fix h2,
-  .buy h2 {
-    font-size: 70px;
-  }
 }
 
 @media (max-width: 570px) {
-  .flexbox {
-    margin: 0 0 0 0;
-    margin-left: 20px;
-    padding-bottom: 26px;
-  }
+  /*
+   ogarnąć zeby .small nie wplywalo na ten styl,
+   uporządkować small-right1,2 itp.
+  */
 
-  .flexbox:last-of-type {
-    padding-bottom: 140px;
-  }
-
-  .text-container {
-    margin-bottom: 20px;
-  }
-
-  .overlay,
-  .text-container div {
-    margin: 0;
-    max-width: 305px;
-  }
-
-  .overlay{
-    margin: 0;
-  }
-
-  .overlay,
-  .overlay-right{
-    max-width: 196px;
-  }
-
-  .big {
-    width: 196px;
-    margin: 0 0 0 0;
-  }
   img.small-right2,
   img.small-right1,
   img.small-right4 {
@@ -425,50 +124,28 @@ footer p {
     bottom: -55px;
   }
 
-  img.small-right1{
+  img.small-right1 {
     width: 118px;
     bottom: -39px;
   }
 
-  img.small-right2{
+  img.small-right2 {
     width: 98px;
     bottom: -35px;
   }
 
-  .small-right1{
+  .small-right1 {
     right: 30px;
     bottom: -40px;
   }
 
-  .small-right2{
+  .small-right2 {
     right: 30px;
   }
 
-  .small-left{
+  .small-left {
     left: 130px;
     bottom: -50px;
-  }
-
-  .photo-container-right {
-    margin-right: 0;
-    text-align: left;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 89px;
-  }
-
-  .overlay-right {
-    margin-right: 0px;
-  }
-
-  .photos {
-    height: 690px;
-    min-height: 0;
-    max-height: none;
-  }
-
-  .photos h3 {
-    font-size: 23px;
   }
 
   .photo-1 {
@@ -517,36 +194,5 @@ footer p {
     left: 17%;
     top: 83%;
     width: 76px;
-  }
-
-  .fix h2,
-  .buy h2 {
-    font-size: 70px;
-  }
-
-  .fix-and-buy {
-    height: 327px;
-  }
-
-  .fix {
-    display: none;
-  }
-
-  .img-container {
-    padding: 79px 0 30px 0;
-  }
-
-  .buy h2,
-  .fix-and-buy div h2 {
-    font-size: 40px;
-    padding-bottom: 0;
-  }
-
-  .border{
-    display: none;
-  }
-
-  footer{
-    display: block;
   }
 }

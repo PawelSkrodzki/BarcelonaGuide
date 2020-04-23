@@ -149,63 +149,8 @@ a {
   max-width: 210px;
 }
 
-.section-background {
-  width: 100%;
-  background-color: #f6ecd8;
-}
-
-.photos {
-  position: relative;
-  height: 100vh;
-  min-height: 800px;
-  max-height: 1800px;
-  max-width: 1280px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f6ecd8;
-}
-
 .photo {
   position: absolute;
-}
-
-.photo-1 {
-  right: 82%;
-  bottom: 58%;
-  filter: grayscale(1);
-}
-
-.photo-2 {
-  right: 50%;
-  bottom: 64%;
-}
-
-.photo-3 {
-  left: 73%;
-  bottom: 57%;
-}
-
-.photo-4 {
-  right: 80%;
-  top: 60%;
-}
-
-.photo-5 {
-  right: 58%;
-  top: 70%;
-  width: 81px;
-}
-
-.photo-6 {
-  left: 54%;
-  top: 72%;
-}
-
-.photo-7 {
-  left: 75%;
-  top: 58%;
 }
 
 .fix-and-buy {
@@ -231,12 +176,6 @@ a {
   transition: 0.8s;
 }
 
-.fix:hover,
-.buy:hover {
-  background-color: #eca278;
-  transition: 0.8s;
-}
-
 .fix img,
 .buy img {
   margin: 0 auto;
@@ -247,12 +186,30 @@ a {
 .fix h2,
 .buy h2 {
   text-align: center;
-} /* do reszty */
+} 
 
 .border {
   max-width: 1px;
   height: 100%;
   border-right: 1px solid #000000;
+}
+
+footer {
+  border-top: 1px solid #f6ecd8;
+  width: 100%;
+  height: 282px;
+  display: none;
+}
+
+footer h4 {
+  padding-top: 92px;
+  text-align: center;
+}
+
+footer a {
+  font-weight: 500;
+  padding-top: 10px;
+  text-align: center;
 }
 
 @media (max-width: 1100px) {
@@ -315,44 +272,7 @@ a {
     margin-right: 3%;
   }
 
-  .photo-1 {
-    left: 5%;
-    width: 100px;
-  }
-
-  .photo-2 {
-    left: 40%;
-    width: 100px;
-  }
-
-  .photo-3 {
-    width: 150px;
-    left: 75%;
-    bottom: 64%;
-  }
-
-  .photo-4 {
-    top: 66%;
-    width: 100px;
-  }
-
-  .photo-5 {
-    right: 58%;
-    top: 75%;
-    width: 70px;
-  }
-
-  .photo-6 {
-    left: 57%;
-    top: 77%;
-    width: 100px;
-  }
-
-  .photo-7 {
-    left: 83%;
-    top: 67%;
-    width: 100px;
-  }
+ 
 
   .fix h2,
   .buy h2 {
@@ -431,48 +351,6 @@ a {
     font-size: 23px;
   }
 
-  .photo-1 {
-    left: 5%;
-    bottom: 60%;
-    width: 79px;
-  }
-
-  .photo-2 {
-    left: 40%;
-    bottom: 75%;
-    width: 75px;
-  }
-
-  .photo-3 {
-    left: 70%;
-    bottom: 66%;
-    width: 86px;
-  }
-
-  .photo-4 {
-    left: 39%;
-    bottom: 53%;
-    width: 75px;
-  }
-
-  .photo-5 {
-    right: 74%;
-    top: 60%;
-    width: 75px;
-  }
-
-  .photo-6 {
-    left: 70%;
-    top: 70%;
-    width: 93px;
-  }
-
-  .photo-7 {
-    left: 17%;
-    top: 83%;
-    width: 76px;
-  }
-
   .fix h2,
   .buy h2 {
     font-size: 70px;
@@ -482,8 +360,7 @@ a {
     height: 327px;
   }
 
-  .fix,
-  .border {
+  .fix {
     display: none;
   }
 
@@ -491,15 +368,17 @@ a {
     padding: 79px 0 30px 0;
   }
 
-  .fix img,
-  .buy img {
-    padding-bottom: 317px;
-  }
-  /* do zmiany */
-
   .buy h2,
   .fix-and-buy div h2 {
     font-size: 40px;
     padding-bottom: 0;
+  }
+
+  .border{
+    display: none;
+  }
+
+  footer{
+    display: block;
   }
 }

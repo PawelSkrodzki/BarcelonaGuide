@@ -1,5 +1,5 @@
 var animatedTags = document.querySelectorAll(
-  ".main-p, .flexbox, .photos h3, .photo, .title, .paragraph, .list, .link, footer h4, footer h2, .fix div, .eat div "
+  ".main-p, .flexbox, .photos h3, .photo, .title, .paragraph, .list, .link, footer h4, footer a, .fix div, .buy div "
 );
 
 animatedTags.forEach((tag) => {

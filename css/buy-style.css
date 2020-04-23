@@ -1,7 +1,6 @@
-
- .section-background {
+.section-background {
   width: 100%;
-  background-color: #E1D19D;
+  background-color: #f6ecd8;
 }
 
 .photos {
@@ -14,24 +13,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #E1D19D;
-} 
+  background-color: #f6ecd8;
+}
 
-
- .photo-1 {
-  right: 80%;
+.photo-1 {
+  right: 82%;
   bottom: 58%;
-  filter: sepia(1);
+  filter: grayscale(1);
 }
 
 .photo-2 {
-  right: 47%;
+  right: 50%;
   bottom: 64%;
 }
 
 .photo-3 {
-  left: 75%;
-  bottom: 61%;
+  left: 73%;
+  bottom: 57%;
 }
 
 .photo-4 {
@@ -51,22 +49,16 @@
 }
 
 .photo-7 {
-  left: 78%;
+  left: 75%;
   top: 58%;
-} 
-
-
- .fix:hover,
+}
+.fix:hover,
 .buy:hover {
-  background-color: #F6ECD8;
+  background-color: #eca278;
   transition: 0.8s;
-} 
-
-
+}
 
 @media (max-width: 860px) {
-
-
   .photo-1 {
     left: 5%;
     width: 100px;
@@ -104,33 +96,30 @@
     left: 83%;
     top: 67%;
     width: 100px;
-  } 
-
+  }
 }
 
 @media (max-width: 570px) {
-
-
   .photo-1 {
     left: 5%;
     bottom: 60%;
-    width: 86px;
+    width: 79px;
   }
 
   .photo-2 {
     left: 40%;
-    bottom: 73%;
-    width: 115px;
+    bottom: 75%;
+    width: 75px;
   }
 
   .photo-3 {
-    left: 73%;
+    left: 70%;
     bottom: 66%;
-    width: 96px;
+    width: 86px;
   }
 
   .photo-4 {
-    left: 42%;
+    left: 39%;
     bottom: 53%;
     width: 75px;
   }
@@ -151,6 +140,5 @@
     left: 17%;
     top: 83%;
     width: 76px;
-  } 
-
+  }
 }

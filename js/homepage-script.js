@@ -51,7 +51,7 @@ var responsiveNavbarAnimation = function(){
 }
 
 
-var animatedTags = document.querySelectorAll('.main-p, .flexbox, .photo, .title, .paragraph, .list, .link, footer h4, footer p');
+var animatedTags = document.querySelectorAll('.main-p, .flexbox, .photo, .title, .paragraph, .list, .link, footer h4, footer a');
 
 animatedTags.forEach(tag => {
     tag.style.opacity = 0;
