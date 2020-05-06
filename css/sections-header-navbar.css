@@ -6,6 +6,13 @@ header h4 {
   z-index: 999;
 }
 
+header h4 a{
+  font-family: CooperLight;
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 300;
+}
+
 .fix-header {
   position: absolute;
   transform: translateX(-50%);
@@ -41,6 +48,13 @@ header h4 {
   position: absolute;
   left: 61px;
   top: 30px;
+}
+
+.nav-bar h5 a{
+  font-family: CooperLight;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 300;
 }
 
 .full-navigation {

@@ -1,7 +1,6 @@
-
- .section-background {
+.section-background {
   width: 100%;
-  background-color: #E1D19D;
+  background-color: #e1d19d;
 }
 
 .photos {
@@ -14,11 +13,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #E1D19D;
-} 
+  background-color: #e1d19d;
+}
 
-
- .photo-1 {
+.photo-1 {
   right: 80%;
   bottom: 58%;
   filter: sepia(1);
@@ -53,20 +51,19 @@
 .photo-7 {
   left: 78%;
   top: 58%;
-} 
+}
 
-
- .fix:hover,
 .buy:hover {
-  background-color: #F6ECD8;
+  background-color: #f6ecd8;
   transition: 0.8s;
-} 
+}
 
-
+.fix:hover {
+  background-color: #ECA278;
+  transition: 0.8s;
+}
 
 @media (max-width: 860px) {
-
-
   .photo-1 {
     left: 5%;
     width: 100px;
@@ -104,13 +101,10 @@
     left: 83%;
     top: 67%;
     width: 100px;
-  } 
-
+  }
 }
 
 @media (max-width: 570px) {
-
-
   .photo-1 {
     left: 5%;
     bottom: 60%;
@@ -151,6 +145,5 @@
     left: 17%;
     top: 83%;
     width: 76px;
-  } 
-
+  }
 }

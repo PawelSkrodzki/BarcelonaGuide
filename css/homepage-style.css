@@ -71,11 +71,60 @@ li {
   font-family: "Cormorant Garamond", serif;
 }
 
+.loader {
+  position: absolute;
+  position: relative;
+  height: 100vh;
+  background-color: #fffdf4;
+}
+
+.loader-container-1,
+.loader-container-2 {
+  position: relative;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  overflow: hidden;
+}
+
+.loader-container-1 {
+  bottom: 55%;
+  width: 670px;
+  height: 56px;
+}
+
+.loader-container-2 {
+  top: 50%;
+  width: 400px;
+  height: 120px;
+}
+
+.loader-line-1 {
+  width: 630px;
+  position: absolute;
+  top: 70px;
+  transform: translateX(-50%);
+  left: 50%;
+  transition: 1.2s ease;
+}
+
+.loader-line-2 {
+  font-size: 128px;
+  width: 370px;
+  height: 120px;
+  position: absolute;
+  top: 120px;
+  transform: translateX(-50%);
+  left: 50%;
+  transition: 1.2s ease;
+}
+
 header {
   height: 100vh;
   background-image: url("../img/gracia1-min.png");
   background-size: cover;
   background-position: bottom;
+  background-attachment: fixed;
   z-index: 10;
 }
 
@@ -94,12 +143,14 @@ header {
   position: absolute;
   left: 61px;
   top: 30px;
+  visibility: hidden;
 }
 
 .full-navigation {
   position: absolute;
   right: 61px;
   top: 30px;
+  visibility: hidden;
 }
 
 .full-navigation a {
@@ -178,10 +229,6 @@ header {
   position: relative;
 }
 
-.responsive-menu-opened {
-  background-color: red;
-}
-
 .line1-close {
   width: 15px;
   transform: rotateZ(-45deg) translate(-4px, 8.8px);
@@ -222,12 +269,18 @@ header {
   transform: translate(-50%, -50%);
   left: 50%;
   top: 50vh;
-  transition: 0.5s;
+  visibility: hidden;
 }
 
 .scrolled {
-  transition: color 0.5s;
   color: #000000;
+  transition: color 0.5s;
+
+}
+
+.scrolled-loader{
+  color: #fffdf4;
+  transition: color 0.4s;
 }
 
 .attached {
@@ -255,9 +308,8 @@ section {
 .buy-container,
 .fix-container {
   display: flex;
-  height: 668px;
-  margin: 0 auto;
-  padding-bottom: 290px;
+  height: 1043px;
+  margin: 0 auto 290px auto;
 }
 
 .eat-photo-container,
@@ -281,22 +333,24 @@ section {
 }
 
 .eat-photo1 {
+  width: 196px;
   left: 52%;
 }
 
 .eat-photo2 {
-  right: 10%;
-  top: 446px;
+  width: 286px;
+  right: 0%;
+  bottom: 0;
 }
 
 .eat-photo3 {
+  width: 311px;
   right: 49%;
-  top: 255px;
+  top: 305px;
 }
 
 .eat-text-container {
-  display: flex;
-  align-items: center;
+  padding-top: 200px;
 }
 
 .title,
@@ -322,7 +376,6 @@ section {
 
 .buy-container {
   flex-direction: row-reverse;
-  height: 592px;
 }
 
 .buy-photo-container {
@@ -331,7 +384,7 @@ section {
 }
 
 .buy-text-container {
-  padding-top: 60px;
+  padding-top: 160px;
   flex: 0.4;
 }
 
@@ -344,38 +397,42 @@ section {
 }
 
 .buy-photo2 {
-  left: 58%;
-  top: 120px;
+  width: 290px;
+  left: 49%;
+  top: 320px;
 }
 
 .buy-photo3 {
-  left: 8%;
+  width: 292px;
+  left: -7%;
   bottom: 0;
 }
 
 .fix-container {
-  height: 525px;
-  padding-bottom: 209px;
+  margin: 0 auto 209px auto;
 }
 
 .fix-text-container {
-  padding-top: 30px;
+  padding-top: 230px;
 }
 
 .fix-photo1 {
-  right: 62%;
+  height: 371px;
+  right: 52%;
 }
 
 .fix-photo2 {
   right: 14%;
-  top: 58px;
+  top: 418px;
 }
 .fix-photo3 {
-  right: 40%;
+  width: 291px;
+  right: 38%;
   bottom: 0;
 }
 
 footer {
+  background-color: #fffdf4;
   border-top: 1px solid #f6ecd8;
   width: 100%;
   height: 282px;
@@ -405,8 +462,44 @@ footer a {
 }
 
 @media (max-width: 1100px) {
+  .eat-photo1 {
+    width: 196px;
+  }
+
+  .eat-photo2 {
+    width: 256px;
+  }
+
+  .eat-photo3 {
+    width: 271px;
+  }
+
+  .buy-photo2 {
+    width: 250px;
+  }
+
+  .buy-photo3 {
+    width: 302px;
+  }
+
   .buy-text-container div {
     padding-left: 17%;
+  }
+
+  .fix-photo1 {
+    height: 331px;
+    right: 52%;
+  }
+
+  .fix-photo2 {
+    right: 14%;
+    top: 418px;
+  }
+
+  .fix-photo3 {
+    width: 251px;
+    right: 38%;
+    bottom: 0;
   }
 }
 
@@ -418,8 +511,87 @@ footer a {
   .main-p {
     width: 70%;
   }
+
+  .eat-container,
+  .buy-container,
+  .fix-container {
+    height: auto;
+    display: block;
+    margin: 0 auto 216px auto;
+  }
+
+  .fix-container {
+    margin: 0 auto 166px auto;
+  }
+
+  .eat-photo-container {
+    height: 706px;
+  }
+
+  .buy-photo-container {
+    height: 500px;
+  }
+
+  .fix-photo-container {
+    height: 600px;
+  }
+
+  .eat-text-container,
+  .buy-text-container,
+  .fix-text-container {
+    padding-top: 30px;
+    padding-left: 30px;
+  }
+
   .buy-text-container div {
-    padding-left: 28px;
+    padding-left: 0;
+  }
+
+  .eat-photo1 {
+    left: 45%;
+  }
+
+  .eat-photo2 {
+    width: 220px;
+    left: 54%;
+  }
+
+  .eat-photo3 {
+    width: 220px;
+    left: 30px;
+    top: 305px;
+  }
+
+  .buy-photo1 {
+    right: 52%;
+  }
+
+  .buy-photo2 {
+    width: 180px;
+    left: 60%;
+    top: 330px;
+  }
+
+  .buy-photo3 {
+    width: 220px;
+    left: 30px;
+    bottom: 20px;
+  }
+
+  .fix-photo1 {
+    height: 261px;
+    right: 60%;
+  }
+
+  .fix-photo2 {
+    width: 170px;
+    left: 68%;
+    top: 230px;
+  }
+
+  .fix-photo3 {
+    width: 171px;
+    right: 40%;
   }
 }
 @media (max-width: 570px) {
@@ -435,7 +607,9 @@ footer a {
     display: block;
   }
 
-  p {
+  p,
+  .list li,
+  .link {
     font-size: 18px;
   }
 
@@ -446,5 +620,79 @@ footer a {
   .main-p {
     max-width: 335px;
     padding: 350px 0 132px 0; /*w razie co zmienic funkcje w JS*/
+  }
+
+  .fix-container {
+    margin: 0 auto 108px auto;
+  }
+
+  .eat-photo-container {
+    height: 536px;
+  }
+
+  .buy-photo-container {
+    height: 390px;
+  }
+
+  .fix-photo-container {
+    height: 370px;
+  }
+
+  .buy-text-container,
+  .fix-text-container {
+    padding-top: 60px;
+    padding-left: 21px;
+  }
+
+  .eat-text-container {
+    padding-top: 20px;
+    padding-left: 21px;
+  }
+
+  .eat-photo1 {
+    width: 120px;
+    left: 25%;
+  }
+
+  .eat-photo2 {
+    width: 152px;
+    left: 57%;
+  }
+
+  .eat-photo3 {
+    width: 145px;
+    left: 21px;
+    top: 205px;
+  }
+
+  .buy-photo1 {
+    width: 130px;
+    left: 10%;
+  }
+
+  .buy-photo2 {
+    top: 85px;
+    width: 134px;
+  }
+
+  .buy-photo3 {
+    width: 152px;
+    left: 21px;
+  }
+
+  .fix-photo1 {
+    height: 166px;
+    left: 21px;
+  }
+
+  .fix-photo2 {
+    width: 101px;
+    left: 68%;
+    top: 150px;
+  }
+
+  .fix-photo3 {
+    width: 101px;
+    left: 30%;
   }
 }

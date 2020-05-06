@@ -27,7 +27,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: CooperLight;
+  font-family: CooperLight, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -183,10 +183,14 @@ a {
   transition: 0.8s;
 }
 
-.fix h2,
-.buy h2 {
+.fix a,
+.buy a{
+  font-family: CooperLight, sans-serif;
+  font-size: 80px;
+  font-weight: 300px;
+  font-weight: normal;
   text-align: center;
-} 
+}
 
 .border {
   max-width: 1px;
@@ -274,8 +278,8 @@ footer a {
 
  
 
-  .fix h2,
-  .buy h2 {
+  .fix a,
+  .buy a{
     font-size: 70px;
   }
 }
@@ -351,13 +355,8 @@ footer a {
     font-size: 23px;
   }
 
-  .fix h2,
-  .buy h2 {
-    font-size: 70px;
-  }
-
   .fix-and-buy {
-    height: 327px;
+    height: 432px;
   }
 
   .fix {
@@ -368,8 +367,8 @@ footer a {
     padding: 79px 0 30px 0;
   }
 
-  .buy h2,
-  .fix-and-buy div h2 {
+  .buy a,
+  .fix a {
     font-size: 40px;
     padding-bottom: 0;
   }

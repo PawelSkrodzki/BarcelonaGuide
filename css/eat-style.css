@@ -63,9 +63,13 @@ img.small-right4 {
   top: 58%;
 }
 
-.fix:hover,
-.buy:hover {
+.fix:hover {
   background-color: #e1d19d;
+  transition: 0.8s;
+}
+
+.buy:hover {
+  background-color: #F6ECD8;
   transition: 0.8s;
 }
 
@@ -116,6 +120,11 @@ img.small-right4 {
    uporządkować small-right1,2 itp.
   */
 
+
+ .overlay-right{
+   left: 20%;
+ }
+
   img.small-right2,
   img.small-right1,
   img.small-right4 {
@@ -124,23 +133,21 @@ img.small-right4 {
     bottom: -55px;
   }
 
-  img.small-right1 {
+  .small-right1.small-right1-imp {
     width: 118px;
     bottom: -39px;
+    right: 30px;
+    
   }
 
-  img.small-right2 {
+  .small-right2.small-right2-imp {
     width: 98px;
     bottom: -35px;
+    left: 140px;
   }
 
-  .small-right1 {
-    right: 30px;
-    bottom: -40px;
-  }
-
-  .small-right2 {
-    right: 30px;
+  .small-right4.small-right4-imp{
+    right:0px;
   }
 
   .small-left {

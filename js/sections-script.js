@@ -30,6 +30,7 @@ var responsiveNavbarAnimation = function () {
   });
 };
 
+
 function FixAndBuyHover() {
   var fix = document.querySelector(".fix");
   var buy = document.querySelector(".buy");
@@ -53,13 +54,14 @@ function FixAndBuyHover() {
   });
 }
 
+
 headerAnimationSmall();
 FixAndBuyHover();
 responsiveNavbarAnimation();
 
-window.addEventListener("resize", function () {
-  responsiveNavbarAnimation();
-});
+// window.addEventListener("resize", function () {
+//   responsiveNavbarAnimation();
+// });
 
 document.addEventListener("scroll", function () {
   headerAnimationSmall();
