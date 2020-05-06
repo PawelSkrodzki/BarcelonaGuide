@@ -1,4 +1,5 @@
 
+
 var header = document.querySelector(".fix-header");
 // pozmieniać nazwy z fix-header
 
@@ -67,3 +68,4 @@ document.addEventListener("scroll", function () {
   headerAnimationSmall();
   headerAnimationBig();
 });
+

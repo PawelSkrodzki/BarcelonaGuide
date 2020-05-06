@@ -37,7 +37,7 @@ loaderAnimation = function () {
 };
 
 var fixedHeader = document.querySelector(".header-title");
-var loaderHeader = document.querySelector(".loader-line-2")
+var loaderHeader = document.querySelector(".loader-line-2");
 
 var headerAnimation = function () {
   var viewportHeight = window.innerHeight;
@@ -61,6 +61,7 @@ var headerAnimation = function () {
   } else {
     fixedHeader.classList.remove("attached");
   }
+
 };
 
 var navbar = document.querySelector(".nav-bar");
@@ -79,12 +80,14 @@ var responsiveNavbarAnimation = function () {
   var menu = document.querySelector(".responsive-navigation");
   var lineOne = document.querySelector(".line1");
   var lineTwo = document.querySelector(".line2");
+  var overflowDiv = document.querySelector(".overflow-hidden");
 
   hamburgerMenu.addEventListener("click", function () {
     hamburgerMenu.classList.toggle("hamburger-menu-opened");
     menu.classList.toggle("responsive-navigation-opened");
     lineOne.classList.toggle("line1-close");
     lineTwo.classList.toggle("line2-close");
+    overflowDiv.classList.toggle("overflow-hidden-show");
   });
 };
 

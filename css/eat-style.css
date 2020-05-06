@@ -1,3 +1,7 @@
+.clearfix {
+  overflow: auto;
+}
+
 img.small-right4 {
   right: -105px;
   bottom: -70px;
