@@ -215,6 +215,7 @@ header {
 }
 
 .hamburger-menu {
+  padding: 10px;
   z-index: 1000;
   position: absolute;
   left: -50px;
