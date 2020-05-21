@@ -78,11 +78,6 @@ li {
   background-color: #fffdf4;
 }
 
-.loader-container-1,
-.loader-container-2 {
-
-}
-
 .loader-container-1 {
   position: relative;
   position: absolute;
@@ -506,9 +501,17 @@ footer a {
 }
 
 @media (max-width: 860px) {
+  .loader-container-1{
+    width: 380px;
+  }
+
   .loader-line-1 {
     font-size: 30px;
     width: 380px;
+  }
+
+  .loader-container-2{
+    width: 300px;
   }
 
   .loader-line-2 {
@@ -607,6 +610,10 @@ footer a {
   }
 }
 @media (max-width: 570px) {
+  .loader-container-1{
+    width: 320px;
+  }
+
   .loader-line-1 {
     font-size: 25px;
     width: 315px;
