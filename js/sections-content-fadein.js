@@ -1,5 +1,5 @@
 var animatedTags = document.querySelectorAll(
-  ".main-p, .flexbox, .photos h3, .photo, .title, .paragraph, .list, .link, footer h4, footer a, .fix div, .buy div "
+  "  .main-p, .flexbox, .photos h3, .photo, .title, .paragraph, .list, .link, footer h4, footer a, .fix div, .buy div "
 );
 
 animatedTags.forEach((tag) => {
@@ -19,6 +19,12 @@ var fadeIn = function () {
     }
   });
 };
+
+$("document").ready(function(){
+  $("header h4 a").fadeIn(1500);
+  $(".fix-header").fadeIn(1500);
+
+});
 
 
 

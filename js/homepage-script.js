@@ -24,7 +24,7 @@ loaderAnimation = function () {
   }, 3000);
 
   window.setTimeout(function () {
-    $(".header-title").css("color","#FFFDF4");
+    $(".header-title").css("color", "#FFFDF4");
   }, 3300);
 
   window.setTimeout(function () {
@@ -39,7 +39,6 @@ loaderAnimation = function () {
   }, 5000);
 
   window.setTimeout(function () {
-
     function headerAnimation() {
       var loaderHeader = document.querySelector(".loader-container-2");
 
@@ -50,21 +49,23 @@ loaderAnimation = function () {
       console.log(pixels);
 
       if (pixels > halfViewportHeight) {
-        $(".header-title").css("color","#000000");
+        $(".header-title").css("color", "#000000");
       } else {
-        $(".header-title").css("color","#FFFDF4");
+        $(".header-title").css("color", "#FFFDF4");
       }
 
       if (pixels > halfViewportHeight + 278) {
         loaderHeader.classList.add("attached");
       } else {
         loaderHeader.classList.remove("attached");
-    };}
-    window.addEventListener("scroll", function(){
+      }
+    }
+    window.addEventListener("scroll", function () {
       headerAnimation();
-    })
-  }, 5500);
+    });
+  }, 5100);
 };
+
 
 var navbar = document.querySelector(".nav-bar");
 var hamburgerMenu = document.querySelector(".hamburger-menu");
@@ -79,17 +80,35 @@ function navbarAnimation() {
 }
 
 var responsiveNavbarAnimation = function () {
-  var menu = document.querySelector(".responsive-navigation");
-  var lineOne = document.querySelector(".line1");
-  var lineTwo = document.querySelector(".line2");
-  var overflowDiv = document.querySelector(".overflow-hidden");
-
   hamburgerMenu.addEventListener("click", function () {
-    hamburgerMenu.classList.toggle("hamburger-menu-opened");
-    menu.classList.toggle("responsive-navigation-opened");
-    lineOne.classList.toggle("line1-close");
-    lineTwo.classList.toggle("line2-close");
-    overflowDiv.classList.toggle("overflow-hidden-show");
+    $(".hamburger-menu").toggleClass("hamburger-menu-opened");
+    $(".responsive-navigation").toggleClass("responsive-navigation-opened");
+    $(".line1").toggleClass("line1-close");
+    $(".line2").toggleClass("line2-close");
+    $(".overflow-hidden").toggleClass("overflow-hidden-show");
+
+    var animatedTags = document.querySelectorAll(".responsive-menu li");
+    let delay = 0.25;
+
+    animatedTags.forEach((tag) => {
+      tag.style.opacity = 0;
+      tag.style.transform = "translateX(200px)";
+      tag.style.transitionDelay = `${delay}s`;
+    });
+
+    animatedTags.forEach((tag) => {
+      if ($(".hamburger-menu").hasClass("hamburger-menu-opened")) {
+        tag.style.animation = `fadein  0.5s ${delay}s both`;
+        tag.style.transitionDelay = `${delay}s`;
+        delay = delay + 0.35;
+        tag.style.transform = "translateX(0px)";
+      } else {
+        setTimeout(function () {
+          tag.style.opacity = 0;
+          tag.style.animation = "";
+        }, 200);
+      }
+    });
   });
 };
 

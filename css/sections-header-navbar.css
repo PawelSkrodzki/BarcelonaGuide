@@ -7,6 +7,7 @@ header h4 {
 }
 
 header h4 a{
+  display: none;
   font-family: CooperLight;
   font-style: normal;
   font-size: 24px;
@@ -14,18 +15,20 @@ header h4 a{
 }
 
 .fix-header {
+  display: none;
+  line-height: 1;
   position: absolute;
   transform: translateX(-50%);
-  top: 140px;
+  top: 110px;
   left: 50%;
-  transition: font-size 0.5s;
+  transition: font-size 0.75s ease;
 }
 
 .sticky {
   position: fixed;
   font-size: 64px;
   top: 50px;
-  transition: font-size 0.5s;
+  transition: font-size 0.75s ease;
   z-index: 999;
 }
 
@@ -125,6 +128,8 @@ header h4 a{
   display: flex;
   align-items: center;
   padding-bottom: 79px;
+  transform: translateX(200px);
+  transition: 1s;
 }
 
 .responsive-menu a {
