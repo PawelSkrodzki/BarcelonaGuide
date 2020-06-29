@@ -15,7 +15,6 @@
 * {
   margin: 0;
   padding: 0;
-  display: block;
 }
 
 body {
@@ -170,16 +169,17 @@ header {
 }
 
 .full-navigation a {
+  display: block;
   margin-bottom: 3px;
   position: relative;
 }
 
 .overflow-hidden {
-  overflow-x: hidden;
+  overflow: hidden;
   position: absolute;
   width: 60px;
   right: 0;
-  height: 1000px;
+  height: 100vh;
   display: none;
   display: block;
   transition: 0.5s;
@@ -359,6 +359,10 @@ section {
   max-width: 290px;
 }
 
+.link{
+  display: block;
+}
+
 .list {
   list-style-type: disc;
   font-weight: 500;
@@ -440,6 +444,7 @@ footer h4 {
 }
 
 footer a {
+  display: block;
   font-weight: 500;
   padding-top: 10px;
   text-align: center;

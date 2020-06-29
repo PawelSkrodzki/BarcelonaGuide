@@ -67,6 +67,7 @@ header h4 a{
 }
 
 .full-navigation a {
+  display: block;
   margin-bottom: 3px;
   position: relative;
 }

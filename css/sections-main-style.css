@@ -15,7 +15,6 @@
 * {
   margin: 0;
   padding: 0;
-  display: block;
 }
 
 body {
@@ -178,6 +177,7 @@ a {
 
 .fix img,
 .buy img {
+  display: block;
   margin: 0 auto;
   padding-bottom: 47px;
   transition: 0.8s;
@@ -185,6 +185,7 @@ a {
 
 .fix a,
 .buy a{
+  display: block;
   font-family: CooperLight, sans-serif;
   font-size: 80px;
   font-weight: 300px;
@@ -211,8 +212,9 @@ footer h4 {
 }
 
 footer a {
+  display: block;
   font-weight: 500;
-  padding-top: 10px;
+  padding-top: 20px;
   text-align: center;
 }
 
